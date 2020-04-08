@@ -10,6 +10,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "baseUrl": "src",
+    "rootDir": "src",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
