@@ -4,6 +4,14 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
+function getVH() {
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+getVH();
+
+window.addEventListener("resize", getVH);
+
 ReactDOM.render(
   (
     <React.StrictMode>
