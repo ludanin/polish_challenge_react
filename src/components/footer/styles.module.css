@@ -1,0 +1,8 @@
+:root {
+  --FOOTERwidth: 100vw;
+  --FOOTERheight: calc(var(--vh, 1vh) * 15);
+}
+
+.something {
+  width: 100vw;
+}
