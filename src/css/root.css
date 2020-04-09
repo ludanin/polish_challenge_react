@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+:root {
+  --radius: 2.7vw;
+} @media screen and (min-width: 621px) {
+  :root {
+    --radius: 0.72vw;
+  }
+}
