@@ -1,0 +1,35 @@
+:root {
+  --MAPwidth: 80vw;
+  --MAPheight: 80vh;
+
+  --MAPwrapperWidth: 95vw;
+  --MAPwrapperHeight: calc(var(--vh, 1vh) * 97.5)
+}
+
+:global(.MAP) {
+  width: var(--MAPwrapperWidth);
+  height: calc(var(--MAPwrapperHeight) - var(--FOOTERheight));
+
+  margin-left: 2.5vw;
+  margin-top: 2.5vh;
+
+  overflow: hidden;
+  border-radius: var(--radius);
+
+  opacity: 0;
+  animation: fadeIn ease 6000ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; box-shadow: 0 0 0px #0000; }
+  to { opacity: 1; box-shadow: 0 0 13px #0003; }
+}
+
+.marker::before {
+  font-size: 1.8em;
+}
+
+.marker.selected {
+  color: red;
+}
