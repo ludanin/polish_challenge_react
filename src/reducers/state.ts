@@ -1,13 +1,13 @@
 import { Person } from "models/person";
 
 export interface StoreState {
-  fetching: boolean;
+  fetching: boolean | undefined;
   people: Person[];
   selectedPersonID: string | undefined;
 }
 
 export const initialStoreState: StoreState = {
-  fetching: false,
+  fetching: undefined,
   people: [],
   selectedPersonID: undefined,
 };
