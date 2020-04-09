@@ -1,8 +1,8 @@
 import types, { Action } from "actions/types";
-import { StoreState } from "reducers/state";
+import { initialStoreState, StoreState } from "reducers/state";
 
 export default function(
-  state: StoreState,
+  state: StoreState = {...initialStoreState},
   action: Action,
 ): StoreState {
   switch (action.type) {
