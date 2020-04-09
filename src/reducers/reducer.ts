@@ -33,7 +33,7 @@ export default function(
         if (selectedPersonID === action.payload) {
           return {
             ...state,
-            selectedPersonID: undefined,
+            selectedPersonID: "",
           };
         }
       }
