@@ -16,8 +16,6 @@ function* watchFETCH_DATA() {
       "http://localhost:8080/api/get",
     );
 
-    console.log(response);
-
     if (response.status === 200) {
       yield put({
         type: types.FETCH_DATA,
