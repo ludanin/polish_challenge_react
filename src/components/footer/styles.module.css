@@ -3,6 +3,37 @@
   --FOOTERheight: calc(var(--vh, 1vh) * 15);
 }
 
-.something {
-  width: 100vw;
+:global(.FOOTER) {
+  position: fixed;
+  bottom: 0;
+
+  width: var(--FOOTERwidth);
+  height: var(--FOOTERheight);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  height: 100%;
+  margin-right: 4%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.coords {
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+
+  height: 80%;
+
+  align-items: center;
+  justify-content: space-around;
 }
